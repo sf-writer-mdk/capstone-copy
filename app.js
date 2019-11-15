@@ -1,105 +1,110 @@
 /*
-var backdrop = document.querySelector('.backdrop');
-//var modal = document.querySelector('.modal');
-//var modalNoButton = document.querySelector('.modal__action--negative');
-//var selectPlanButtons = document.querySelectorAll('.plan button');
-var toggleButton = document.querySelector('.toggle-button');
-var mobileNav = document.querySelector('.mobile-nav');
-
-// console.dir(backdrop.style['background-image']);
-
-// console.dir(backdrop);
-
-// use this code only once I've figured out
-// which button I'm using 
-
-/*for (var i = 0; i < selectPlanButtons.length; i++) {
-  selectPlanButtons[i].addEventListener('click', function() {
-    // modal.style.display = "block";
-    // backdrop.style.display = "block";
-    // modal.className = 'open'; // This will actually overwrite the complete class list
-    //modal.classList.add("open");
-    backdrop.classList.add('open');
+$(function() {
+  $(window).on("scroll", function() {
+      if($(window).scrollTop() > 50) {
+          $(".header").addClass("active");
+      } else {
+          //remove the background property so it comes transparent again (defined in your css)
+         $(".header").removeClass("active");
+      }
   });
-}*/
-
-/*backdrop.addEventListener('click', function() {
-   mobileNav.style.display = 'none';
-  
-  //mobileNav.classList.remove('open');
-  
-  //closeModal();
-});
-
-/*if (modalNoButton) {
-  modalNoButton.addEventListener("click", closeModal);
-}
-
-function closeModal() {
-  //   backdrop.style.display = "none";
-  //   modal.style.display = "none";
-  if (modal) {
-    modal.classList.remove("open");
-  }
-  backdrop.classList.remove("open");
-}*/
-
-
-
-
-/*toggleButton.addEventListener('click', function() {
-   mobileNav.style.display = 'close';
-   backdrop.style.display = 'close';
-}
-  
-//mobileNav.classList.add('open');
-//backdrop.classList.add('open');
 });
 */
 
 
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 555 && $(window).scrollTop() < 810) {
+        $(".header").addClass("active");
 
+   } else if 
+        ($(window).scrollTop() > 810 && $(window).scrollTop() < 1287) {
+            $(".header").removeClass("active");
 
+    } else if 
+    ($(window).scrollTop() > 1287 && $(window).scrollTop() < 1954) {
+        $(".header").addClass("active");
 
+    } else if 
+    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2278) {
+        $(".header").removeClass("active");
 
+    } else if 
+    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3270) {
+        $(".header").addClass("active");
+    
 
-// code from earlier lecture
-
-var backdrop = document.querySelector(".backdrop");
-//var modal = document.querySelector(".modal");
-//var modalNoButton = document.querySelector(".modal__action--negative");
-//var selectPlanButtons = document.querySelectorAll(".plan button");
-var toggleButton = document.querySelector('.toggle-button');
-var mobileNav = document.querySelector('.mobile-nav');
-
-// console.dir(backdrop);
-/*for (var i = 0; i < selectPlanButtons.length; i++) {
-  selectPlanButtons[i].addEventListener("click", function() {
-    modal.style.display = "block";
-    backdrop.style.display = "block";
-  });
-}*/
-
-backdrop.addEventListener("click", function() {
-    mobileNav.style.display = 'none';
-    closeModal();
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".header").removeClass("active");
+    }
+    
 });
 
-//modalNoButton.addEventListener("click", closeModal);
 
 
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 555 && $(window).scrollTop() < 810) {
+        $(".main-nav__item>a").addClass("active-scroll");
 
-//needed for backdrop to close upon clicking on viewport
-function closeModal() {
-  backdrop.style.display = "none";
-  //modal.style.display = "none";
-}
+    } else if 
+    ($(window).scrollTop() > 810 && $(window).scrollTop() < 1287) {
+        $(".main-nav__item>a").removeClass("active-scroll");
 
-toggleButton.addEventListener('click', function() {
-    mobileNav.style.display = 'close';
-    backdrop.style.display = 'close';
+    } else if 
+    ($(window).scrollTop() > 1287 && $(window).scrollTop() < 1954) {
+        $(".main-nav__item>a").addClass("active-scroll");
+
+    } else if 
+    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2278) {
+        $(".main-nav__item>a").removeClass("active-scroll");
+
+    } else if 
+    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3270) {
+        $(".main-nav__item>a").addClass("active-scroll");
+
+        
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".main-nav__item>a").removeClass("active-scroll");
+    }
 });
- 
-//mobileNav.classList.add('open');
-//backdrop.classList.add('open');
+
+
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 555 && $(window).scrollTop() < 810) {
+        $(".main-nav__item--cta>a").addClass("active-contact");
+
+    } else if 
+    ($(window).scrollTop() > 810 && $(window).scrollTop() < 1287) {
+        $(".main-nav__item--cta>a").removeClass("active-contact");
+
+    } else if 
+    ($(window).scrollTop() > 1287 && $(window).scrollTop() < 1954) {
+        $(".main-nav__item--cta>a").addClass("active-contact");
+
+    } else if 
+    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2278) {
+        $(".main-nav__item--cta>a").removeClass("active-contact");
+
+    } else if 
+    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3270) {
+        $(".main-nav__item--cta>a").addClass("active-contact");
+
+        
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".main-nav__item--cta>a").removeClass("active-contact");
+    }
 });
+
+/*
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 555) {
+        $(".header").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".header").removeClass("active");
+    }
+});
+*/

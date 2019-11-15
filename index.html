@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
     <title>Capstone Project</title>
     <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="jquery-3.4.1.js"></script>
     <!-- <link rel="icon" type="image/png" href="myProject_initial_working_copy_Copy.png"/> -->
 </head>
 
@@ -60,10 +61,10 @@
         </section>
         </div>
     
-        <section id="about" class="about">
-            <h1 class="offset">About</h1>
+        <section id="about" class="about" class="scroll-color">
+            <h1 class="offset">What's this about?</h1>
             <h3>Hi! I'm Marvin</h3>
-            <p>A self-learning web developer in training</p>
+            <p>A self-learning web developer</p>
             <p>Let me show you what I'm learning</p>
         </section>
 
@@ -97,7 +98,7 @@
          </section>
 
 
-        <section id="classes" class="classes">
+        <section id="classes" class="classes" class="scroll-color">
             <h1>Classes</h1>
             
             <a href="https://www.coursera.org/specializations/web-design">Coursera - Web Design for Everybody Specialization</a>
@@ -136,7 +137,7 @@
 
             <br></br>
 
-            <a href="https://www.udemy.com/the-complete-nodejs-developer-course-2/">The Complete Node.js Developer Course - 3rd Edition</a>
+            <a class="last__class" href="https://www.udemy.com/the-complete-nodejs-developer-course-2/">The Complete Node.js Developer Course - 3rd Edition</a>
         </section>
 
         
@@ -147,19 +148,23 @@
             <!--for flexbox images-->
             <div class="projects_row">
                 <div class="projects_column">
-                    <img src="images/react.90552fc5.png" alt="Snow" style="width:100%">
+                    <img src="images/lab2.png" alt="lab" style="width:100%">
+                    <div class="pro-desc">Medical Laboratory Sciences</div>
                 </div>
 
                 <div class="projects_column">
-                    <img src="images/react.90552fc5.png" alt="Forest" style="width:100%">
+                    <img src="images/odyssey.png" alt="portfolio" style="width:100%">
+                    <div class="pro-desc">My Blog</div>
                 </div>
 
                 <div class="projects_column">
-                    <img src="images/react.90552fc5.png" alt="Mountains" style="width:100%">
+                    <img src="images/portfolio.png" alt="web Development" style="width:100%">
+                    <div class="pro-desc">Portfolio</div>
                 </div>
 
                 <div class="projects_column">
-                    <img src="images/react.90552fc5.png" alt="Mountains" style="width:100%">
+                    <img src="images/volunteer1.png" alt="volunteering" style="width:100%">
+                    <div class="pro-desc">Volunteers for Volunteers</div>
                 </div>
 
             </div>
@@ -168,97 +173,139 @@
 
 
 
-        <section id="technologies" class="technologies">
+        <section id="technologies" class="technologies" class="scroll-color">
 
             <h1>Technologies</h1>
 
             <!--for flexbox tech icons-->
-            <div class="tech_row1">
+            <div class="tech_row1 tech_rows">
+                <div class="tech_column1">
+                    <img src="images/html5.png" alt="html5">
+                    <div class="content">
+                        <div class="text">HTML5</div>
+                    </div>
+                </div>         
+            
 
                 <div class="tech_column1">
-                    <img src="images/html5.png" alt="html5" style="width:50%">
+                    <img src="images/CSS3_logo_and_wordmark.svg.png" alt="Forest">
+                    <div class="content">
+                        <div class="text">CSS3</div>
+                    </div>
                 </div>
 
                 <div class="tech_column1">
-                    <img src="images/CSS3_logo_and_wordmark.svg.png" alt="Forest" style="width:50%">
+                    <img src="images/sass.png" alt="Forest">
+                    <div class="content">
+                        <div class="text">Sass</div>
+                    </div>
+                </div>
+    
+                <div class="tech_column1">
+                    <img src="images/flexbox2.png" alt="Mountains">
+                    <div class="content">
+                        <div class="text">Flexbox</div>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="tech_row2 tech_rows">
+                    <div class="tech_column2">
+                        <img src="images/flexbox2.png" alt="Mountains">
+                        <div class="content">
+                            <div class="text">Grid</div>
+                        </div>
+                    </div>
+    
+                    <div class="tech_column2">
+                        <img src="images/javascript.2efd4312.png" alt="Mountains">
+                        <div class="content">
+                            <div class="text">JavaScript</div>
+                        </div>
+                    </div>
+    
+                    <div class="tech_column2">
+                        <img src="images/jquery.94849b40.png" alt="jQuery">
+                        <div class="content">
+                            <div class="text">jQuery</div>
+                        </div>
+                    </div>
+
+                    <div class="tech_column2">
+                        <img src="images/react.90552fc5.png" alt="Snow">
+                        <div class="content">
+                            <div class="text">React</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech_column1">
-                    <img src="images/javascript.2efd4312.png" alt="Mountains" style="width:50%">
+                <div class="tech_row3 tech_rows">
+                
+                    <div class="tech_column3">
+                        <img src="images/redux.f18023dc.png" alt="Forest">
+                        <div class="content">
+                            <div class="text">Redux</div>
+                        </div>
+                    </div>
+
+                    <div class="tech_column3">
+                        <img src="images/nodejs.d42672d4.png" alt="Mountains">
+                        <div class="content">
+                            <div class="text">Node</div>
+                        </div>
+                    </div>
+
+                    <div class="tech_column3">
+                        <img src="images/express.png" alt="Mountains">
+                        <div class="content">
+                            <div class="text">Express</div>
+                        </div>
+                    </div>
+
+                    <div class="tech_column3">
+                        <img src="images/mongodb.9d1d550a.png" alt="Snow">
+                        <div class="content">
+                            <div class="text">MongoDB</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tech_column1">
-                    <img src="images/jquery.94849b40.png" alt="jQuery" style="width:50%">
+
+            <div class="tech_row4 tech_rows ">
+
+                <div class="tech_column4">
+                        <img src="images/graphql.png" alt="Mountains">
+                        <div class="content">
+                            <div class="text">GraphQL</div>
+                        </div>
+                </div>
+
+                <div class="tech_column4">
+                    <img src="images/npm.png" alt="Forest">
+                    <div class="content">
+                        <div class="text">NPM</div>
+                    </div>
+                </div>
+
+                <div class="tech_column4">
+                    <img src="images/webpack.png" alt="Mountains">
+                    <div class="content">
+                        <div class="text">Webpack</div>
+                    </div>
+                </div>
+
+                <div class="tech_column4">
+                    <img src="images/gulp.png" alt="Mountains">
+                    <div class="content">
+                        <div class="text">Gulp</div>
+                    </div>
                 </div>
 
             </div>
 
 
-            <div class="tech_row2">
-
-                <div class="tech_column2">
-                    <img src="images/react.90552fc5.png" alt="Snow" style="width:50%">
-                </div>
-
-                <div class="tech_column2">
-                    <img src="images/redux.f18023dc.png" alt="Forest" style="width:50%">
-                </div>
-
-                <div class="tech_column2">
-                    <img src="images/nodejs.d42672d4.png" alt="Mountains" style="width:50%">
-                </div>
-
-                <div class="tech_column2">
-                    <img src="images/express.png" alt="Mountains" style="width:50%">
-                </div>
-
-            </div>
-
-
-            <div class="tech_row3">
-
-                <div class="tech_column3">
-                    <img src="images/mongodb.9d1d550a.png" alt="Snow" style="width:50%">
-                </div>
-
-                <div class="tech_column3">
-                    <img src="images/npm.png" alt="Forest" style="width:50%">
-                </div>
-
-                <div class="tech_column3">
-                    <img src="images/nodejs.d42672d4.png" alt="Mountains" style="width:50%">
-                </div>
-
-                <div class="tech_column3">
-                    <img src="images/react.90552fc5.png" alt="Mountains" style="width:50%">
-                </div>
-
-            </div>
-
-
-            <div class="tech_row3">
-
-                <div class="tech_column3">
-                    <img src="images/react.90552fc5.png" alt="Snow" style="width:50%">
-                </div>
-    
-                <div class="tech_column3">
-                    <img src="images/redux.f18023dc.png" alt="Forest" style="width:50%">
-                </div>
-    
-                <div class="tech_column3">
-                    <img src="images/nodejs.d42672d4.png" alt="Mountains" style="width:50%">
-                </div>
-    
-                <div class="tech_column3">
-                    <img src="images/react.90552fc5.png" alt="Mountains" style="width:50%">
-                </div>
-    
-            </div>
-    
-
-
-        </section>
+    </section>
 
         
         <section id="contact" class="contact">
@@ -276,11 +323,9 @@
                 <input type="text" id="last-name" required>
                 <label for="email">E-Mail</label>
                 <input type="email" id="email" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" required>
-                <input type="checkbox" id="agree-terms" required>
-                <label for="agree-terms">Agree to
-                    <a href="#">Terms &amp; Conditions</a>
+                <input type="checkbox" id="blog" required>
+                <label for="see-blog">Visit my blog!
+                    <a href="https://mywebdevelopmentodyssey.dev/" id="link__blog">My Web Development Odyssey</a>
                 </label>
                 <button type="submit" class="button">Sign Up</button>
             </form>
@@ -323,5 +368,6 @@
         </div>--> 
     </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
