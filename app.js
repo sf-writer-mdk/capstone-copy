@@ -25,11 +25,11 @@ $(window).on("scroll", function() {
         $(".header").addClass("active");
 
     } else if 
-    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2278) {
+    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2335) {
         $(".header").removeClass("active");
 
     } else if 
-    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3270) {
+    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3600) {
         $(".header").addClass("active");
     
 
@@ -55,11 +55,11 @@ $(window).on("scroll", function() {
         $(".main-nav__item>a").addClass("active-scroll");
 
     } else if 
-    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2278) {
+    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2335) {
         $(".main-nav__item>a").removeClass("active-scroll");
 
     } else if 
-    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3270) {
+    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3600) {
         $(".main-nav__item>a").addClass("active-scroll");
 
         
@@ -84,11 +84,11 @@ $(window).on("scroll", function() {
         $(".main-nav__item--cta>a").addClass("active-contact");
 
     } else if 
-    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2278) {
+    ($(window).scrollTop() > 1954 && $(window).scrollTop() < 2335) {
         $(".main-nav__item--cta>a").removeClass("active-contact");
 
     } else if 
-    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3270) {
+    ($(window).scrollTop() > 2278 && $(window).scrollTop() < 3600) {
         $(".main-nav__item--cta>a").addClass("active-contact");
 
         
