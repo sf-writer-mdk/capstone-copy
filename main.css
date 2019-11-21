@@ -1,3 +1,8 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+
 html {
     box-sizing: border-box;
     background: black;
@@ -6,6 +11,7 @@ html {
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    
     margin: 0;
     /* padding-top: 7.5rem; */
     /* height: 100%; */
@@ -13,8 +19,9 @@ body {
 
 @media (min-width: 40rem) {
     body {
-        font-family: 'Times New Roman', Times, serif;
-        margin: 0;
+        /* font-family: 'Times New Roman', Times, serif; */
+        margin: 0; 
+        
         padding-top: 7.5rem;
         /* height: 100%; */
     }
@@ -23,7 +30,7 @@ body {
 .header {
     background-color: #b4bb72;
     padding: .5rem 1rem;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     margin: 0;
     width: 100%;
@@ -31,10 +38,19 @@ body {
     box-sizing: border-box;
     left: 0;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.header.actives {
+    background:black;
+    -webkit-transition: all ease-out .75s;
+    -moz-transition: all ease-out .75s;
+    -o-transition: all ease-out .75s;
+    transition: all ease-out .75s;
+
 }
 
 
@@ -158,6 +174,7 @@ body {
         margin: 0;
         padding: 0;
         font-family: sans-serif;
+
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -199,6 +216,11 @@ body {
     font-size: 1.15rem;
 }
 
+.main-nav__item>a.active-scrolls { 
+    background: none;
+    color: #287f37;
+}
+
 @media (min-width: 40rem) {
     .main-nav__item a {
         /*margin: 0 16px;*/
@@ -233,6 +255,11 @@ body {
     background: #287f37;
     padding: .5rem 1rem;
     border-radius: .5rem;
+}
+
+.main-nav__item--cta>a.active-contacts { 
+    background: #b4bb72;
+    color: black;
 }
 
 @media (min-width: 40rem) {
@@ -293,21 +320,21 @@ h1 {
 /* } ********************************
 */
 
-/* .background {
-    height: 34.7rem;
-    width: 100%;
-} */
+
+.background { 
+    margin-top: 16rem;
+}
 
 .webdev {
-    background-image: url("webdev-training.png");
+    /* background-image: url("rain.png"); */
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("rain.png");
     background-size: cover;
-    /* width: 100%; */
+    background-repeat: no-repeat;
     height: 34.7rem; 
-
     /*check main code to add padding
     padding: ;
     */
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,14 +342,19 @@ h1 {
 }
 
 
+
 @media (min-width: 40rem) {
+    .background { 
+        margin-top: auto;
+     }
+    
     .webdev {
-        background: url("webdev-training.png");
-        background-size: cover;
+        /* background-image: url("rain.png"); */
+        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("rain.png");
+        background-size: auto;
+        /* background-repeat: no-repeat; */
         /* width: 100%;  */
         height: 34.7rem;
-        background-repeat: no-repeat;
-        backface-visibility: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -344,7 +376,7 @@ h1 {
 
 
 .webdev h2 {
-    color:#287f37;
+    color:#b4bb72;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;  
@@ -370,7 +402,7 @@ h1 {
     
     
     .webdev h2 {
-        color:#287f37;
+        color:#b4bb72;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         margin: 2.8rem auto;
